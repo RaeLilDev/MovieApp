@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YouTubePlayerViewController" customModule="Starter" customModuleProvider="target">
+            <connections>
+                <outlet property="videoPlayer" destination="DNS-21-QWx" id="cs9-Rn-0wc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNS-21-QWx" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                    <rect key="frame" x="0.0" y="248" width="414" height="400"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="400" id="9Sx-uh-rwp"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UF-0H-2rd">
+                    <rect key="frame" x="16" y="60" width="60.5" height="31"/>
+                    <color key="tintColor" name="color_white"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Close"/>
+                    <connections>
+                        <action selector="onClickDismiss:" destination="-1" eventType="touchUpInside" id="j4i-ii-PAa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="DNS-21-QWx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="C1B-4V-Sa3"/>
+                <constraint firstItem="6UF-0H-2rd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="LCR-3l-ODj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DNS-21-QWx" secondAttribute="trailing" id="sLQ-T3-uCl"/>
+                <constraint firstItem="DNS-21-QWx" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="vEU-Xv-Jns"/>
+                <constraint firstItem="6UF-0H-2rd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="veX-jt-OpF"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="71"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="color_white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

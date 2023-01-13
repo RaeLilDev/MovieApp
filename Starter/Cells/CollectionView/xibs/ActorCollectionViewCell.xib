@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ActorCollectionViewCell" customModule="Starter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="133" height="179"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="133" height="179"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oMl-Gn-Fts">
+                        <rect key="frame" x="0.0" y="0.0" width="133" height="179"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFz-yX-mpy">
+                        <rect key="frame" x="0.0" y="0.0" width="133" height="179"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Hl6-G0-082">
+                        <rect key="frame" x="99" y="11.5" width="24" height="21.5"/>
+                        <color key="tintColor" name="color_white"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Kc5-Cj-6I9">
+                        <rect key="frame" x="99" y="11.5" width="24" height="21.5"/>
+                        <color key="tintColor" name="color_yellow"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="0ZT-69-Lvy"/>
+                            <constraint firstAttribute="height" constant="24" id="BXj-W3-b4G"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZKQ-Am-gSq">
+                        <rect key="frame" x="10" y="169" width="113" height="0.0"/>
+                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="14"/>
+                        <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbk-gv-8vp">
+                        <rect key="frame" x="10" y="161" width="113" height="0.0"/>
+                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="16"/>
+                        <color key="textColor" name="color_white"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Kc5-Cj-6I9" secondAttribute="trailing" constant="10" id="0uA-2U-Z0L"/>
+                <constraint firstAttribute="trailing" secondItem="ZKQ-Am-gSq" secondAttribute="trailing" constant="10" id="3oT-8v-o79"/>
+                <constraint firstAttribute="bottom" secondItem="oMl-Gn-Fts" secondAttribute="bottom" id="5LM-is-Tol"/>
+                <constraint firstItem="VFz-yX-mpy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8Mx-cm-r0M"/>
+                <constraint firstItem="VFz-yX-mpy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="A5g-9x-hZv"/>
+                <constraint firstAttribute="trailing" secondItem="VFz-yX-mpy" secondAttribute="trailing" id="GJT-Ba-cMB"/>
+                <constraint firstItem="ZKQ-Am-gSq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="KYS-8P-nWM"/>
+                <constraint firstAttribute="trailing" secondItem="fbk-gv-8vp" secondAttribute="trailing" constant="10" id="O4S-Lc-9LW"/>
+                <constraint firstItem="oMl-Gn-Fts" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QpZ-Iz-RQf"/>
+                <constraint firstAttribute="bottom" secondItem="ZKQ-Am-gSq" secondAttribute="bottom" constant="10" id="RJh-vV-zSb"/>
+                <constraint firstAttribute="bottom" secondItem="VFz-yX-mpy" secondAttribute="bottom" id="TBr-ET-FJe"/>
+                <constraint firstAttribute="trailing" secondItem="fbk-gv-8vp" secondAttribute="trailing" constant="10" id="V3Z-KV-PO6"/>
+                <constraint firstItem="Kc5-Cj-6I9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="YxN-fp-ZcH"/>
+                <constraint firstItem="Hl6-G0-082" firstAttribute="leading" secondItem="Kc5-Cj-6I9" secondAttribute="leading" id="eaS-TX-QJH"/>
+                <constraint firstItem="oMl-Gn-Fts" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fpj-NV-NZl"/>
+                <constraint firstAttribute="trailing" secondItem="oMl-Gn-Fts" secondAttribute="trailing" id="iqg-Kp-xdk"/>
+                <constraint firstItem="fbk-gv-8vp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="kxn-n2-fQh"/>
+                <constraint firstItem="Hl6-G0-082" firstAttribute="trailing" secondItem="Kc5-Cj-6I9" secondAttribute="trailing" id="mfJ-vG-442"/>
+                <constraint firstItem="ZKQ-Am-gSq" firstAttribute="top" secondItem="fbk-gv-8vp" secondAttribute="bottom" constant="8" id="oHU-8k-8oY"/>
+                <constraint firstItem="Hl6-G0-082" firstAttribute="bottom" secondItem="Kc5-Cj-6I9" secondAttribute="bottom" id="oK8-Az-fyq"/>
+                <constraint firstItem="Hl6-G0-082" firstAttribute="top" secondItem="Kc5-Cj-6I9" secondAttribute="top" id="rfI-Y6-Cek"/>
+                <constraint firstItem="fbk-gv-8vp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="seV-y4-k4W"/>
+                <constraint firstAttribute="trailing" secondItem="ZKQ-Am-gSq" secondAttribute="trailing" constant="10" id="uV5-yl-zgQ"/>
+            </constraints>
+            <size key="customSize" width="133" height="179"/>
+            <connections>
+                <outlet property="imageViewActorProfile" destination="oMl-Gn-Fts" id="D8D-eY-Mte"/>
+                <outlet property="ivHeart" destination="Hl6-G0-082" id="DbP-w6-QbJ"/>
+                <outlet property="ivHeartFill" destination="Kc5-Cj-6I9" id="nA7-Q5-nkd"/>
+                <outlet property="labelActorName" destination="fbk-gv-8vp" id="pVI-al-S72"/>
+                <outlet property="labelKnownForDepartment" destination="ZKQ-Am-gSq" id="7NG-hs-FL0"/>
+            </connections>
+            <point key="canvasLocation" x="197.82608695652175" y="153.01339285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <namedColor name="color_white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_yellow">
+            <color red="1" green="0.83899998664855957" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
